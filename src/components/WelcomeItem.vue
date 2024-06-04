@@ -1,4 +1,5 @@
 <template>
+<router-view></router-view>
   <div class="item">
     <i>
       <slot name="icon"></slot>
