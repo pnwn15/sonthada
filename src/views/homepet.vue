@@ -62,7 +62,7 @@
       </div>
     </form>
   </div>
-    
+  <Footer1></Footer1>
 </template>
 
 <script>
