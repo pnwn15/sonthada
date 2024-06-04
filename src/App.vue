@@ -3,7 +3,7 @@
 <navbar></navbar>
 <router-view></router-view>
 
- <img src="/public/promote4.png" alt="">
+
 
 </template>
 
