@@ -1,45 +1,110 @@
 <template>
 <div class="bg-[#F4EFDF] w-full h-full flex fixed items-start">
-   <form class="max-w-sm mx-auto ">
-    <div class="flex justify-center text-4xl font-bold mt-14">
-    <h1>สร้างบัญชีผู้ใช้ใหม่</h1>
-    </div>
-  <div class="mt-8">
-    <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">อีเมล</label>
-    <input type="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required />
+<!-- component -->
+<body class="font-mono bg-gray-400 ">
+		<!-- Container -->
+		<div class="container mx-auto mt-6 ">
+			<div class="flex justify-center px-6 my-12">
+				<!-- Row -->
+				<div class="w-full xl:w-3/4 lg:w-11/12 flex">
+					<!-- Col -->
+					<div
+						class="w-full h-auto bg-gray-400 hidden lg:block lg:w-1/2 bg-cover rounded-l-lg"
+          
+					>
+          <img class="h-full" src="/dog5.jpg" alt="">
+          </div>
+					<!-- Col -->
+					<div class="w-full lg:w-1/2  bg-white p-5 rounded-lg lg:rounded-l-none">
+          <div class="w-full flex justify-center">
+            <img class="w-20  flex justify-center items-center" src="/petfood.png" alt="">
+            </div>
+						<h3 class="pt-4 text-2xl text-center">สมัครสมาชิก</h3>
+						<form class="px-8 pt-6 pb-8 mb-4 bg-white rounded">
+							<div class="mb-4">
+								<label class="block mb-2 text-sm font-bold text-gray-700" for="username">
+									อีเมล
+								</label>
+								<input
+									class="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+									id="username"
+									type="text"
+									placeholder="Username"
+								/>
+							</div>
+							<div class="mb-4">
+								<label class="block mb-2 text-sm font-bold text-gray-700" for="password">
+									รหัสผ่าน
+								</label>
+								<input
+									class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border  rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+									id="password"
+									type="password"
+									placeholder="******************"
+								/>
+								
+							</div>
+							<div class="mb-4">
+								<label class="block mb-2 text-sm font-bold text-gray-700" for="password">
+									ยืนยันรหัสผ่าน
+								</label>
+								<input
+									class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border  rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+									id="password"
+									type="password"
+									placeholder="******************"
+								/>
+								
+							</div>
+
+              <div class="mb-4">
+								<label class="block mb-2 text-sm font-bold text-gray-700" for="username">
+									ชื่อผู้ใช้งาน
+								</label>
+								<input
+									class="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+									id="username"
+									type="text"
+									placeholder="name"
+								/>
+							</div>
+				
+							<div class="mb-3 text-center">
+								<button
+									class="w-full px-4 py-2 font-bold text-white bg-[#771011] rounded-full hover:bg-blue-700 focus:outline-none focus:shadow-outline"
+									type="button"
+								>
+									ดำเนินการต่อ
+								</button>
+							</div>
+							<div class="mb-3 text-center">
+								<button
+									class="w-full px-4  py-2 font-bold text-black bg-gray-200 rounded-full hover:bg-blue-700 focus:outline-none focus:shadow-outline"
+									type="button"
+								>
+									ดำเนินการต่อกับ Google
+								</button>
+							</div>
+							<div class="mb-3 text-center">
+								<button
+									class="w-full px-4 py-2 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700 focus:outline-none focus:shadow-outline"
+									type="button"
+								>
+                
+									ดำเนินการต่อกับ Facebook
+								</button>
+							</div>
+			
+			
+				
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+  
   </div>
-  <div class="mt-2">
-    <label  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">รหัสผ่าน</label>
-    <input type="password"  class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required />
-  </div>
-  <div class="mt-2">
-    <label  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">ยืนยันรหัสผ่าน</label>
-    <input type="password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required />
-  </div>
-  <div class="mt-2">
-    <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">เบอร์โทรศัพท์</label>
-    <input type="text"  class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required />
-  </div>
-  <div class="mt-2">
-    <label  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">ที่อยู่ปัจจุบัน</label>
-    <input type="text"  class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required />
-  </div>
-  <div class="flex items-start mt-2">
-    <div class="flex items-center h-5">
-      <input id="terms" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
-    </div>
-    <label for="terms" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">terms and conditions</a></label>
-  </div>
-  <button type="submit"  @click="openDialog" class="text-white bg-[#771011]  mt-5 w-full focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">สมัครสมาชิก</button>
-</form>
-  </div>
-<div v-if="dialogVisible" class="dialog-overlay">
-      <div class="dialog-content">
-        <span @click="closeDialog" class="close-btn">&times;</span>
-        <h2>Dialog Title</h2>
-        <p>Dialog content goes here...</p>
-      </div>
-    </div>
   
 </template>
 
