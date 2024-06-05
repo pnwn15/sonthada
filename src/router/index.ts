@@ -3,6 +3,9 @@ import HomeView from '../views/HomeView.vue'
 import homepet from '../views/homepet.vue'
 import about from '../views/about.vue'
 import signup from '../views/signup.vue'
+import product from '../views/product.vue'
+import reset from '../views/reset.vue'
+import order from '../views/order.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -27,7 +30,23 @@ const router = createRouter({
       path: '/about',
       name: 'about',
       component: about
-    }
+    },
+    {
+      path: '/product',
+      name: 'product',
+      component: product
+    },
+    {
+      path: '/reset',
+      name: 'reset',
+      component: reset
+    },
+    {
+      path: '/order',
+      name: 'order',
+      component: order
+    },
+  
   ]
 })
 

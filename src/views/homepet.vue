@@ -1,106 +1,61 @@
 <template>
 <!-- component -->
-<div class="bg-[#F4EFDF] w-full h-full flex fixed items-start">
 <!-- component -->
-<body class="font-mono bg-gray-400 ">
-		<!-- Container -->
-		<div class="container mx-auto mt-6 ">
-			<div class="flex justify-center px-6 my-12">
-				<!-- Row -->
-				<div class="w-full xl:w-3/4 lg:w-11/12 flex">
-					<!-- Col -->
-					<div
-						class="w-full h-auto bg-gray-400 hidden lg:block lg:w-1/2 bg-cover rounded-l-lg"
-          
-					>
-          <img class="h-full" src="/dog4.jpg" alt="">
-          </div>
-					<!-- Col -->
-					<div class="w-full lg:w-1/2  bg-white p-5 rounded-lg lg:rounded-l-none">
-          <div class="w-full flex justify-center">
-            <img class="w-20  flex justify-center items-center" src="/petfood.png" alt="">
+<!-- Create By Joker Banny -->
+<!-- component -->
+<div class="bg-white dark:bg-gray-900">
+        <div class="flex justify-center h-screen">
+            <div class="hidden bg-cover lg:block lg:w-2/3" style="background-image: url(https://images.unsplash.com/photo-1517519014922-8fc06b814a0e?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
+                <div class="flex items-center h-full px-20 bg-gray-900 bg-opacity-40">
+                    <div>
+                        <h2 class="text-4xl font-bold text-white">ผลิตภัณขายอาหารสัตว์</h2>
+                        
+                        <p class="max-w-xl mt-3 text-gray-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In autem ipsa, nulla laboriosam dolores, repellendus perferendis libero suscipit nam temporibus molestiae</p>
+                    </div>
+                </div>
             </div>
-						<h3 class="pt-4 text-2xl text-center">ล็อคอินเข้าสู่ระบบ</h3>
-						<form class="px-8 pt-6 pb-8 mb-4 bg-white rounded">
-							<div class="mb-4">
-								<label class="block mb-2 text-sm font-bold text-gray-700" for="Email">
-									อีเมล
-								</label>
-								<input
-									class="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-									id="username"
-									type="Email"
-									placeholder="Email"
-								/>
-							</div>
-							<div class="mb-4">
-								<label class="block mb-2 text-sm font-bold text-gray-700" for="password">
-									รหัสผ่าน
-								</label>
-								<input
-									class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border  rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-									id="password"
-									type="password"
-									placeholder="******************"
-								/>
-								
-							</div>
-							<div class="mb-4">
-								<input class="mr-2 leading-tight" type="checkbox" id="checkbox_id" />
-								<label class="text-sm" for="checkbox_id">
-									Remember Me
-								</label>
-							</div>
-							<div class="mb-3 text-center">
-								<button
-									class="w-full px-4 py-2 font-bold text-white bg-[#771011] rounded-full hover:bg-blue-700 focus:outline-none focus:shadow-outline"
-									type="button"
-								>
-									เข้าสู่ระบบ
-								</button>
-							</div>
-							<div class="mb-3 text-center">
-								<button
-									class="w-full px-4  py-2 font-bold text-black bg-gray-200 rounded-full hover:bg-blue-700 focus:outline-none focus:shadow-outline"
-									type="button"
-								>
-									ดำเนินการต่อกับ Google
-								</button>
-							</div>
-							<div class="mb-3 text-center">
-								<button
-									class="w-full px-4 py-2 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700 focus:outline-none focus:shadow-outline"
-									type="button"
-								>
-                
-									ดำเนินการต่อกับ Facebook
-								</button>
-							</div>
-							<hr class="mb-6 border-t" />
-							<div class="text-center">
-								<a
-									class="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800"
-									href="/signup"
-								>
-									สมัครบัญชี
-								</a>
-							</div>
-							<div class="text-center">
-								<a
-									class="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800"
-									href="#"
-								>
-									ลืมรหัสผ่าน
-								</a>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</body>
-  
-  </div>
+            
+            <div class="flex items-center w-full max-w-md px-6 mx-auto lg:w-2/6">
+                <div class="flex-1">
+                    <div class="text-center w-full">
+						<img class="w-32 inline-block " src="/petfood.png" alt="">
+                        <h2 class="text-4xl font-bold text-center text-[#771011] dark:text-white">ยินดีต้อนรับ</h2>
+                        
+                        <p class="mt-3 text-gray-500 dark:text-gray-300">ล็อคอินเข้าสู่ระบบ</p>
+                    </div>
+
+                    <div class="mt-8">
+                        <form>
+                            <div>
+                                <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-200">อีเมล</label>
+                                <input type="email" name="email" id="email" placeholder="example@example.com" class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                            </div>
+
+                            <div class="mt-6">
+                                <div class="flex justify-between mb-2">
+                                    <label for="password" class="text-sm text-gray-600 dark:text-gray-200">รหัสผ่าน</label>
+                                    <a href="#" class="text-sm text-gray-400 focus:text-blue-500 hover:text-blue-500 hover:underline">Forgot password?</a>
+                                </div>
+
+                                <input type="password" name="password" id="password" placeholder="Your Password" class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                            </div>
+
+                            <div class="mt-6">
+                                <button
+                                    class=" bg-[#771011] w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform  rounded-md hover:bg-blue-400 focus:outline-none focus:bg-blue-400 focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+                                    <a href="/">ล็อคอินเข้าสู่ระบบ</a>
+                                </button>
+                            </div>
+
+                        </form>
+
+                        <p class="mt-6 text-sm text-center text-gray-400">Don&#x27;t have an account yet? <a href="/signup" class="text-blue-500 focus:outline-none focus:underline hover:underline">Sign up</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </template>
 
 <script>
